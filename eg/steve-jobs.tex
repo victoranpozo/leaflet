@@ -1,0 +1,184 @@
+% A Three fold Brochure based on the Latex document class-leaflet
+
+% Brochure created by Joaquim Ignatious Monteiro with inputs from online community
+ 
+\documentclass[notumble,10pt,a4paper]{leaflet} 
+
+% notumble - By default (tumble) the contents of the backside sheet is printed upside down. The option no tumble supresses that.
+
+% Please find the remaining options at http://ctan.math.illinois.edu/macros/latex/contrib/leaflet/leaflet-manual.pdf
+
+\usepackage{color}
+\usepackage{flowfram}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{setspace}    % Adjust line spacing    
+\onehalfspacing          % Adjust line spacing  \doublespacing 
+\usepackage[inline]{enumitem}
+
+% Agregar español
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+% Incluye Links; pero sin marco
+\usepackage[hidelinks]{hyperref}
+%\titleformat*{\subsection}{\color{Blue}}
+
+%FONT Change
+%\renewcommand{\familydefault}{cmss} 
+%To Draw a horizontal Line
+\newcommand{\sectionline}{
+  \nointerlineskip \vspace{\baselineskip}
+  \hspace{\fill}\rule{0.8\linewidth}{.7pt}\hspace{\fill}
+  \par\nointerlineskip \vspace{\baselineskip}
+}
+%\AddToBackground{2}{\includegraphics[width=29.7cm]{bkf}}
+%\AddToBackground{2}{\includegraphics[width=29.7cm]{cmy}}
+
+% To create a border along the top of each page
+% To change border color just search on internet for cmyk colour codes and change the values in the brackets after the option cmyk
+
+\vtwotonetop{1cm}{0.6\paperwidth}{[cmyk]{0,.9,1,.6}}{topleft}%
+{0.4\paperwidth}{[cmyk]{0,.9,1,.6}}{topright}
+
+% To create a border along the bottom of each page
+% To change border color just search on internet for cmyk colour codes and change the values in the brackets after the option cmyk
+
+\vtwotonebottom{1cm}{0.6\paperwidth}{[cmyk]{0,.9,1,.6}}{bottomleft}%
+{0.4\paperwidth}{[cmyk]{0,.9,1,.6}}{bottomright}
+
+\begin{document}
+\begin{center}
+	{\Large Biografía} \\[.3cm]
+	\textit{de}\\[.4cm]
+	{\huge {Steve Jobs}}\\ [.3cm]
+	\textbf{{\large (Exposición grupal)}}\\[.5cm]
+	%%\textit{\large{organised by}}
+	\vfill
+	
+	\includegraphics[width=4cm]{img/logouni.png}\\
+	\label{fig:logo}
+	\textbf{Universidad Nacional de Ingeniería}\\
+	{\large \textbf{Facultad de Ingeniería Mecánica}}\\[.5cm]
+	\textit{\large{Escuela profesional de}}\\[.3cm]
+	%%\includegraphics[scale=.15]{ICFOSS_logo}\\
+	%%\label{fig:ICFOSS_logo}
+	{\large \textbf{Ingeniería Mecatrónica}}\\[.5cm]
+	\textit{MBCZ800-B Comunicación y Redacción}\\
+	\large{Docente:\\
+		}
+	
+	\vfill
+	Alumnos:\\ 
+	\textbf{Victor A. N. Pozo\\
+		Sebastian R. Paredes\\
+		Jhon K. Mendoza\\
+		Bruno D. Nuñez}\\
+\end{center}
+
+
+\thispagestyle{empty} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{\large{Steve Jobs}}
+Internet of Things (IoT) is the network of computing devices, sensors and actuators embedded in our day to day electronics ranging from household appliances, automobiles, e-doors etc to even the space exploratory missions. These objects can communicate with each other, send and receive data via internet. Around 10 billion devices are connected to the internet at present, some forecasts predict the number to swell to 50 billion by the year 2020 \cite{cite:everyshi}.
+
+IoT opens a world of opportunities in areas like smart homes, smart cities, affordable health care solutions and efficient industrial processes. The growth of IoT also brings forth several challenges, notably in the areas of data and device security, privacy and standardisation.  
+
+\subsection{\large{IoT Lab CET}}
+The Internet of Things lab (IoT lab CET) has been set up at the College of Engineering Trivandrum (CET) as an initiative of the Department of Technical Education, Government of Kerala and the Kerala Startup Mission in 2017. The IoT lab CET aims to build up the technical expertise and to foster a culture of entrepreneurship in IoT. The lab provides students and faculty access to latest tools and resources in IoT.\\
+\\
+Web:\url{https://iotlabcet.blogspot.in}
+
+
+ 
+\newpage
+\subsection{\large{About the Workshop}}
+The College of Engineering Trivandrum in association with the International Centre for Free and Open Source Software (ICFOSS) is organising a workshop on Internet of Things from June 18 - 22, 2018. The objective of workshop is to equip  Engineering students with the essential tools for designing and realizing IoT related projects. The workshop will comprise of lectures and hands-on sessions on the following topics.
+
+
+\begin{itemize*} %use itemize without the asterik to get the usual list appearance
+	\item Raspberry Pi \& Raspbian
+	\item Python programming
+	\item RPi GPIO programming
+	\item Sensors and Actuators
+	\item IoT cloud platforms
+	\item M2M protocols for IoT
+	\item Open source resources for IoT 
+	\item Open CV and IoT
+\end{itemize*}
+
+\subsection{\large{Resource Persons}}
+The workshop sessions will be conducted by Faculty members from the College of Engineering Trivandrum and resource persons from ICFOSS,Technopark.
+
+\subsection{\large{Who can Apply}}
+B.Tech (all branches), M.Tech, MCA and BCA students of colleges in Kerala are eligible to apply for the workshop. 
+
+\subsection{\large{Fee}}
+Fee for the five day workshop is Rs.1500 only. The fee covers study materials and lunch during the workshop. The workshop timings are from 9:30 am to 3:30 pm on all days. Outstation participants will have to make their own arrangements for transportation and accommodation. 
+
+\newpage
+\subsection{\large{Selection}}
+Only 40 seats are available for the workshop. Participants will be selected from among the applicants to ensure representation from more institutions across the state. 
+
+\subsection{\large{Certification}}
+Participation certificates will be issued by the CCE, College of Engineering Trivandrum.
+
+\subsection{\large{How to Apply}}
+Please apply for the workshop at the url given below. Applicants who are selected for the workshop will be intimated via email to pay the fee and confirm participation for the workshop \cite{cit:latex-man}.
+
+\subsection{\large{Important Dates}}
+\noindent
+\begin{tabular}{@{}ll}
+	Last date to Apply & May 20, 2018\\
+	Intimation of selection      & May 30, 2018\\
+	Confirmation of participation & June 10, 2018
+\end{tabular}
+
+{\large\textbf{{Contact}}}\\
+Please add our email id \url{iotws18@gmail.com} to your address book to receive information from us about the course.
+
+\begin{center}
+\textbf{Apply} \\
+	Un texto va aquí
+
+
+
+\newpage
+
+\section{\large{Fragmento del discurso realizado por S. Jobs}}
+The College of Engineering Trivandrum was established in 1939 as the first Engineering College in the then Travancore State. Over the past 76 years it has grown to the most sought-after institute of engineering studies in the State of Kerala.The College has eight full-fledged engineering departments offering eight undergraduate, 23 postgraduate and Ph.D.programmes under the University of Kerala and the APJ Abdul Kalam Technological University.\\
+
+The College has more than 3500 students, 285 teaching staff and 290 non-teaching staff. Ever since its inception the College has maintained its commitment to high quality technical education. It has a vast and strong alumni base, spread across the globe.
+
+For more details, visit \url{http://www.cet.ac.in}
+
+\subsection{\large{Contact}}
+Joaquim Ignatious Monteiro\\
+Assistant Professor\\ 
+Dept. of Electronics \& Communication Engg.\\
+College of Engineering Trivandrum\\
+Kerala,India - 695 016\\
+Email:  \url{iotws18@gmail.com}
+
+\newpage
+Lista de eventos chéveres en la vida de S. jobs
+
+% Bibliografia
+\begin{thebibliography}{000}
+\bibitem{cit:latex-man}
+  \textsc{L.\,Lamport}: \LaTeX. A Document Preparation System.
+  \textit{User's Guide And Reference Manual.} Second Edition. 1994.
+\bibitem{cit:everyshi}
+  \textsc{M.\,Schr\"oder}: The \Lpack{everyshi} package. 2001.
+  CTAN: \url{macros/latex/contrib/ms/everyshi.dtx}
+\end{thebibliography}
+
+\end{document}
